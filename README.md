@@ -1,6 +1,6 @@
 # Dining Satisfaction Dataset
 
-- Satisfaction: Airline satisfaction level (Satisfaction, neutral, or dissatisfaction)
+- Satisfaction: Dining satisfaction level (Satisfaction, neutral, or dissatisfaction)
 - Age: The actual age of the diners
 - Gender: Gender of the diners (Female, Male)
 - Type of Dining: Purpose of the visit to the restaurant (Personal Dining, Business Dining)
