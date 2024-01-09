@@ -1,9 +1,5 @@
 # Survey Dashboard: Data Visualization for Dining Restaurant
 
-## Overview
-
-Hello and welcome to the Survey Dashboard project! We hope this message finds you well. We are impressed with your expertise in the data field and are thrilled to extend an invitation for the next stage of our interview process. Your role in creating a Statistics Dashboard for our Dining Satisfaction project is pivotal, and we look forward to seeing your creative contributions.
-
 ## Task Details
 
 ### Tools and Technologies
