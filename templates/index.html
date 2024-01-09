@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluck App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Dining Satisfaction App</h1>
+        <form action="/submit" method="post" id="fluckForm">
+            <div class="form-column">
+                <label for="age">Age:</label>
+                <input type="text" name="Age" id="age">
+
+                <label for="distance">Distance from Home:</label>
+                <input type="text" name="Distance from Home" id="distance">
+
+                <label for="table_comfort">Table Comfort:</label>
+                <select name="Table Comfort" id="table_comfort">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="reservation_convenience">Reservation Convenience:</label>
+                <select name="Reservation Convenience" id="reservation_convenience">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="food_quality">Food and Drink Quality:</label>
+                <select name="Food and Drink Quality" id="food_quality">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="seating_location">Seating Location:</label>
+                <select name="Seating Location" id="seating_location">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="wifi_service">WiFi Service:</label>
+                <select name="WiFi Service" id="wifi_service">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="entertainment_options">Entertainment Options:</label>
+                <select name="Entertainment Options" id="entertainment_options">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="online_support">Online support:</label>
+                <select name="Online support" id="online_support">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-column">
+                <label for="ease_of_booking">Ease of Online booking:</label>
+                <select name="Ease of Online booking" id="ease_of_booking">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="table_service">Table Service:</label>
+                <select name="Table Service" id="table_service">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="space_between_tables">Space Between Tables:</label>
+                <select name="Space Between Tables" id="space_between_tables">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="baggage_handling">Baggage handling:</label>
+                <select name="Baggage handling" id="baggage_handling">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="checkin_service">Checkin service:</label>
+                <select name="Checkin service" id="checkin_service">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="cleanliness">Cleanliness:</label>
+                <select name="Cleanliness" id="cleanliness">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="online_menu_access">Online Menu Access:</label>
+                <select name="Online Menu Access" id="online_menu_access">
+                    {% for value in range(6) %}
+                        <option value="{{ value }}">{{ value }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="wait_time">Wait Time for a Table:</label>
+                <input type="text" name="Wait Time for a Table" id="wait_time">
+
+                <label for="gender">Gender:</label>
+                <select name="Gender" id="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+
+                <label for="customer_type">Customer Type:</label>
+                <select name="Customer Type" id="customer_type">
+                    <option value="Loyal Customer">Loyal Customer</option>
+                    <option value="disloyal Customer">disloyal Customer</option>
+                </select>
+
+                <label for="type_of_dining">Type of Dining:</label>
+                <select name="Type of Dining" id="type_of_dining">
+                    <option value="Personal">Personal</option>
+                    <option value="Business">Business</option>
+                </select>
+
+                <label for="ambiance">Ambiance:</label>
+                <select name="Ambiance" id="ambiance">
+                    <option value="Eco">Eco</option>
+                    <option value="Business">Business</option>
+                    <option value="Eco Plus">Eco Plus</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
