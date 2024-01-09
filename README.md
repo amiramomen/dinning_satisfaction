@@ -42,7 +42,7 @@ Take Into consideration that (0: (No Answer / Not Applicable); 1-5 (Actual Ratin
 
 ### Bonus Challenge
 
-Explore predictive analytics using ML to predict user satisfaction based on reviews (not mandatory, but a testament to your dedication).
+Explore predictive analytics using ML to predict user satisfaction based on reviews.
 ## Installation
 
 To install the dependencies listed in a requirements.txt file, you can use the pip package manager in the command line. Here are the steps:
