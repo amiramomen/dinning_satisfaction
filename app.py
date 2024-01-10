@@ -1,11 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from flask import flash
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder, RobustScaler
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 from joblib import load
 
